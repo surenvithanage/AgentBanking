@@ -1,4 +1,4 @@
-package com.epic.agentbanking.service.service.impl;
+package com.epic.agentbanking.service.impl;
 
 import com.epic.agentbanking.dao.UserDao;
 import com.epic.agentbanking.model.Users;

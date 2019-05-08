@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/userupdate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/user.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/epic/agentbanking/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epic/agentbanking/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epic/agentbanking/dao/impl/UserDaoImpl.java" />
