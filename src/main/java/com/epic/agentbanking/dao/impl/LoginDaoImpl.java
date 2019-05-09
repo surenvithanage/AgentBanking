@@ -44,100 +44,15 @@ public class LoginDaoImpl extends AbstractDAO<String, Users> implements LoginDao
     }
 
     @Override
-    public Integer getPassparamcount(String paramcode) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Boolean setUserPasswordStatus(Users user, Audittrace audit, String statuscode) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Boolean updateUser(Users input, Audittrace audit, boolean login) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public HashMap<String, List<Page>> getPageSection(String userrole) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public HashMap<String, List<Task>> getPageTask(String userrolecode) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public HashMap<String, List<Task>> getAllPageTask() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<Page> getPageList(String userrolecode, String section) {
-        List<Page> pageList = null;
-        
-        Criteria cr = getSession().createCriteria(Pagesectionuserrole.class);
-        
-//            Criterion userrole =  Restrictions.eq("userrole", userrolecode);
-//            Criterion sec =  Restrictions.eq("section", section);
-//            LogicalExpression exp = Restrictions.and(userrole, sec);
-//            cr.add(exp);
-            cr.add(Restrictions.eq("section", section));
-            List results = cr.list();
-            for (Iterator iterator = results.iterator(); iterator.hasNext();){
-                Pagesectionuserrole psu = (Pagesectionuserrole)iterator.next();
-                
-                Page page = psu.getPage();
-                System.out.println("################"+page.getDescription());
-                pageList.add(page);
-            }
-        return pageList;
+    public List<Pagesectionuserrole> getPageList(String userrolecode, String section) {
+        Criteria criteria = getSession().createCriteria(Pagesectionuserrole.class);
+        return (List<Pagesectionuserrole>)criteria.list();
     }
 
     @Override
     public List<Page> getAllPageList() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public HashMap<String, Boolean> getAllPageListforDualAuth() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<Page> getAllSectionPageList(String section) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<Section> getSectionList(String userrole) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<Section> getAllSectionList() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Date getCurrtime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getUserString(Users usr) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void saveLogoutAudit(Users u, Audittrace audit, boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String findSectionByID(String hchoosesection) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Criteria criteria = getSession().createCriteria(Page.class);
+        return (List<Page>)criteria.list();
     }
 
     @Override

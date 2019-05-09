@@ -235,7 +235,7 @@
           </ul></li>
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu"><a href="#"
-                                               class="dropdown-toggle" data-toggle="dropdown">Suren Vithanage</span>
+                                               class="dropdown-toggle" data-toggle="dropdown">${username}</span>
         </a>
           <ul class="dropdown-menu">
             <!-- User image -->
@@ -244,7 +244,7 @@
                     alt="User Image">
 
               <p>
-                Suren Vithanage - ADMIN <small>Epic Technology Group</small>
+                ${username} - ${userrole} <small>Epic Technology Group</small>
               </p></li>
             <!-- Menu Footer-->
             <li class="user-footer">

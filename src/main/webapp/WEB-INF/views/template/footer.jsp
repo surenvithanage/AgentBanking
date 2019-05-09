@@ -21,7 +21,7 @@
 		<b>Version</b> 1.0.0
 	</div>
 	<strong>Copyright &copy; 2000-2019 <a
-			href="https://adminlte.io">Epic Technology Group</a>.
+			href="#">Epic Technology Group</a>.
 	</strong> All rights reserved.
 </footer>
 >

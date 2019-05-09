@@ -6,6 +6,7 @@
 package com.epic.agentbanking.controller;
 
 import com.epic.agentbanking.model.Page;
+import com.epic.agentbanking.model.Pagesectionuserrole;
 import com.epic.agentbanking.model.Users;
 import com.epic.agentbanking.service.LoginService;
 import java.util.List;
@@ -35,17 +36,13 @@ public class LoginController {
 
     @Autowired
     private MessageSource messageSource;
-
-//    private Map<String,Users> map = new HashMap<>();
     
     @RequestMapping(value = {"/login"}, method = RequestMethod.POST)
     public String check(@ModelAttribute("user") @Validated Users user, BindingResult result, ModelMap model) {
-//    public String check(@ModelAttribute("user") @Validated Users user, BindingResult result, final RedirectAttributes redirectAttributes) {
 
         String retPage = "home/home";
         System.out.println("called LoginAction : check");
         if (result.hasErrors()) {
-//            populateDefaultModel(model);
             return "error";
         }
         try {
@@ -53,23 +50,18 @@ public class LoginController {
                 Users loggedUser = service.findUserDatabyUsernameandPassword(user.getUsername(),user.getPassword());
                 if (loggedUser != null) {
                     retPage = "home/home";
-                    System.out.println("********************************************" + loggedUser.getFullname());
-                    //load pages
                     String userrolecode = loggedUser.getUserrole().getUserrolecode();
                     String section = "ALL";
-                    List<Page> pages = service.getPageList(userrolecode, section);
-                    
+                    List<Pagesectionuserrole> pages = service.getPageList(userrolecode, section);
+                     
                     model.addAttribute("username", loggedUser.getFullname());
                     model.addAttribute("userrole", userrolecode);
-//                    model.addAttribute("pages", pages);
-                    
+                    model.addAttribute("pages", pages);
                 } else {
                     model.addAttribute("error", "Invalid Username or Password!");
-                    System.out.println("******************************************** Invalid Username or Password!");
                 }
             } else {
                 model.addAttribute("error", "Empty Username and password");
-                System.out.println("******************************************** Empty Username and password");
             }
         } catch (Exception ex) {
             model.addAttribute("error","Cannot Login. Please contact administrator.");

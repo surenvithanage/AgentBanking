@@ -37,7 +37,9 @@
         href="<c:url value="/resources/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"/>">
   <!-- Google Font -->
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"/>
+  <!--  Date Tables -->
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <header class="main-header">
@@ -233,7 +235,7 @@
           </ul></li>
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu"><a href="#"
-                                               class="dropdown-toggle" data-toggle="dropdown">Suren Vithanage</span>
+                                               class="dropdown-toggle" data-toggle="dropdown">${username}</span>
         </a>
           <ul class="dropdown-menu">
             <!-- User image -->
@@ -242,7 +244,7 @@
                     alt="User Image">
 
               <p>
-                Suren Vithanage - ADMIN <small>Epic Technology Group</small>
+                ${username} - ${userrole} <small>Epic Technology Group</small>
               </p></li>
             <!-- Menu Footer-->
             <li class="user-footer">
