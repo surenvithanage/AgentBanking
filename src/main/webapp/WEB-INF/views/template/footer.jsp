@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
 	<style>
 		.main-footer-new {
 			position : fixed;
@@ -19,11 +20,10 @@
 	<div class="pull-right hidden-xs">
 		<b>Version</b> 1.0.0
 	</div>
-	<strong>Copyright © 2019 Epic Lanka (pvt) Ltd.
+	<strong>Copyright &copy; 2000-2019 <a
+			href="https://adminlte.io">Epic Technology Group</a>.
 	</strong> All rights reserved.
 </footer>
-    
-    
 >
 <div class="control-sidebar-bg"></div>
 </div>
@@ -79,5 +79,8 @@
 <script src="<c:url value="/resources/dist/js/pages/dashboard.js"/>"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<c:url value="/resources/dist/js/demo.js" />"></script>
+<!-- Date Tables -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 </body>
 </html>

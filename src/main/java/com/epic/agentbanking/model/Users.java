@@ -82,7 +82,7 @@ public class Users  implements java.io.Serializable {
         this.username = username;
     }
 
-@ManyToOne(fetch=FetchType.LAZY)
+@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="PASSWORDSTATUS")
     public Status getStatusByPasswordstatus() {
         return this.statusByPasswordstatus;
@@ -92,7 +92,7 @@ public class Users  implements java.io.Serializable {
         this.statusByPasswordstatus = statusByPasswordstatus;
     }
 
-@ManyToOne(fetch=FetchType.LAZY)
+@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="STATUS")
     public Status getStatusByStatus() {
         return this.statusByStatus;
@@ -102,7 +102,7 @@ public class Users  implements java.io.Serializable {
         this.statusByStatus = statusByStatus;
     }
 
-@ManyToOne(fetch=FetchType.LAZY)
+@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="USERROLE")
     public Userrole getUserrole() {
         return this.userrole;
@@ -202,7 +202,7 @@ public class Users  implements java.io.Serializable {
         this.password = password;
     }
 
-@OneToMany(fetch=FetchType.LAZY, mappedBy="users")
+@OneToMany(fetch=FetchType.EAGER, mappedBy="users")
     public Set<Usersbranch> getUsersbranches() {
         return this.usersbranches;
     }
