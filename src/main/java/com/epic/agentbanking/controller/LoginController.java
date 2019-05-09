@@ -57,10 +57,10 @@ public class LoginController {
                     //load pages
                     String userrolecode = loggedUser.getUserrole().getUserrolecode();
                     String section = "ALL";
-//                    List<Page> pages = service.getPageList(userrolecode, section);
+                    List<Page> pages = service.getPageList(userrolecode, section);
                     
                     model.addAttribute("username", loggedUser.getFullname());
-//                    model.addAttribute("userrole", userrolecode);
+                    model.addAttribute("userrole", userrolecode);
 //                    model.addAttribute("pages", pages);
                     
                 } else {
