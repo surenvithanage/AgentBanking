@@ -72,7 +72,7 @@ public class Pagesectionuserrole  implements java.io.Serializable {
         this.id = id;
     }
 
-@ManyToOne(fetch=FetchType.LAZY)
+@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="PAGE", nullable=false, insertable=false, updatable=false)
     public Page getPage() {
         return this.page;
@@ -82,7 +82,7 @@ public class Pagesectionuserrole  implements java.io.Serializable {
         this.page = page;
     }
 
-@ManyToOne(fetch=FetchType.LAZY)
+@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="SECTION", nullable=false, insertable=false, updatable=false)
     public Section getSection() {
         return this.section;
@@ -92,7 +92,7 @@ public class Pagesectionuserrole  implements java.io.Serializable {
         this.section = section;
     }
 
-@ManyToOne(fetch=FetchType.LAZY)
+@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="USERROLE", nullable=false, insertable=false, updatable=false)
     public Userrole getUserrole() {
         return this.userrole;

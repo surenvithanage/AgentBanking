@@ -25,6 +25,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.hibernate.Criteria;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.LogicalExpression;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 import sun.misc.BASE64Encoder;
@@ -72,11 +74,15 @@ public class LoginDaoImpl extends AbstractDAO<String, Users> implements LoginDao
     }
 
     @Override
-    public List<Page> getPageList(String userrole, String section) {
+    public List<Page> getPageList(String userrolecode, String section) {
         List<Page> pageList = null;
         
         Criteria cr = getSession().createCriteria(Pagesectionuserrole.class);
-            cr.add(Restrictions.eq("userrole", userrole));
+        
+//            Criterion userrole =  Restrictions.eq("userrole", userrolecode);
+//            Criterion sec =  Restrictions.eq("section", section);
+//            LogicalExpression exp = Restrictions.and(userrole, sec);
+//            cr.add(exp);
             cr.add(Restrictions.eq("section", section));
             List results = cr.list();
             for (Iterator iterator = results.iterator(); iterator.hasNext();){
@@ -155,7 +161,7 @@ public class LoginDaoImpl extends AbstractDAO<String, Users> implements LoginDao
         return user;
     }
 
-    private static String convertToHex(byte[] data) {
+    private String convertToHex(byte[] data) {
         StringBuilder buf = new StringBuilder();
         for (int i = 0; i < data.length; i++) {
             int halfbyte = (data[i] >>> 4) & 0x0F;
@@ -172,7 +178,7 @@ public class LoginDaoImpl extends AbstractDAO<String, Users> implements LoginDao
         return buf.toString();
     }
 
-    public static String makeHash(String input) throws Exception {
+    public String makeHash(String input) throws Exception {
         try {
             Provider p = new BouncyCastleProvider();
             Security.addProvider(p);
