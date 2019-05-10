@@ -7,29 +7,20 @@ package com.epic.agentbanking.dao.impl;
 
 import com.epic.agentbanking.common.AbstractDAO;
 import com.epic.agentbanking.dao.LoginDao;
-import com.epic.agentbanking.model.Audittrace;
 import com.epic.agentbanking.model.Page;
 import com.epic.agentbanking.model.Pagesectionuserrole;
-import com.epic.agentbanking.model.Section;
-import com.epic.agentbanking.model.Task;
 import com.epic.agentbanking.model.Users;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.security.Provider;
 import java.security.Security;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.hibernate.Criteria;
-import org.hibernate.criterion.Criterion;
-import org.hibernate.criterion.LogicalExpression;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
-import sun.misc.BASE64Encoder;
 
 /**
  *

@@ -7,6 +7,7 @@ D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Terminaluserprofile.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Pagetask.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Status.java
+D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\controller\HomeController.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\common\AbstractDAO.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\dao\UserDao.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\configuration\AppConfig.java
@@ -20,6 +21,7 @@ D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\MemberAttendance.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Terminalmodel.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\configuration\AppInitializer.java
+D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\interceptor\DemoInterceptor.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\common\CommonDAO.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\service\impl\UserServiceImpl.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Usersbranch.java
@@ -32,6 +34,7 @@ D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Agentparam.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Agent.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Agentuser.java
+D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\service\HomeService.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\service\impl\LoginServiceImpl.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Statuscategory.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\dao\LoginDao.java
@@ -50,12 +53,15 @@ D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Userrole.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\service\UserService.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Branch.java
+D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\dao\impl\HomeDaoImpl.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\AgentuserbatchId.java
+D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\service\impl\HomeServiceImpl.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Transactionhistory.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Pagesectionuserrole.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\bean\LoginBean.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Users.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Terminalversion.java
+D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\dao\HomeDao.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Group.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\Terminal.java
 D:\EPIC PROJECTS\AGENT_BANKING\AgentBanking\src\main\java\com\epic\agentbanking\model\TerminallocationHistory.java

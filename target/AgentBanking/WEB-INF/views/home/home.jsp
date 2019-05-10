@@ -42,6 +42,9 @@
                         <div class="row" style="margin-top: 50px;">
                             <h3>Home Page</h3>
                         </div>
+                        <c:if test="${not empty error}">
+                            Error Message : ${error}
+                        </c:if>
                     </section>
                 </div>
                 <div class="row">

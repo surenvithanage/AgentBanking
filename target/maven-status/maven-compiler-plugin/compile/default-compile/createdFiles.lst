@@ -1,3 +1,4 @@
+com\epic\agentbanking\controller\HomeController.class
 com\epic\agentbanking\model\Audittrace.class
 com\epic\agentbanking\controller\UserController.class
 com\epic\agentbanking\model\Transactionhistory.class
@@ -23,6 +24,7 @@ com\epic\agentbanking\model\Users.class
 com\epic\agentbanking\model\PagetaskId.class
 com\epic\agentbanking\model\Statuscategory.class
 com\epic\agentbanking\model\Passwordpolicy.class
+com\epic\agentbanking\service\HomeService.class
 com\epic\agentbanking\model\Pagetask.class
 com\epic\agentbanking\model\TerminallocationId.class
 com\epic\agentbanking\service\UserService.class
@@ -31,6 +33,8 @@ com\epic\agentbanking\model\Transactiontype.class
 com\epic\agentbanking\model\Userroletype.class
 com\epic\agentbanking\model\Tmpauthrec.class
 com\epic\agentbanking\model\Response.class
+com\epic\agentbanking\dao\impl\HomeDaoImpl.class
+com\epic\agentbanking\service\impl\HomeServiceImpl.class
 com\epic\agentbanking\dao\LoginDao.class
 com\epic\agentbanking\model\Unit.class
 com\epic\agentbanking\service\impl\UserServiceImpl.class
@@ -50,6 +54,7 @@ com\epic\agentbanking\model\Status.class
 com\epic\agentbanking\model\Terminal.class
 com\epic\agentbanking\model\TerminaluserprofileId.class
 com\epic\agentbanking\service\LoginService.class
+com\epic\agentbanking\interceptor\DemoInterceptor.class
 com\epic\agentbanking\model\Terminalversion.class
 com\epic\agentbanking\model\Transactions.class
 com\epic\agentbanking\model\Userrole.class
@@ -59,6 +64,7 @@ com\epic\agentbanking\controller\LoginController.class
 com\epic\agentbanking\model\Terminalmodel.class
 com\epic\agentbanking\model\TerminallocationHistory.class
 com\epic\agentbanking\bean\LoginBean.class
+com\epic\agentbanking\dao\HomeDao.class
 com\epic\agentbanking\model\Pagesectionuserrole.class
 com\epic\agentbanking\model\AgentuserbatchId.class
 com\epic\agentbanking\common\CommonDAO.class
